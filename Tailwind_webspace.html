@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome to demo web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Nav-bar  section  -->
+
+    <section class="navigation-bar">
+        <nav class="p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center text-white text-lg font-bold">
+                    <img src="bright_gaming_logo-removebg-.png" Company Logo" class="h-8 mr-2 animate-pulse">
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="block lg:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path v-if="!isOpen" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+                            <path v-if="isOpen" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 6h20v2H2V6zm0 5h20v2H2v-2zm0 5h20v2H2v-2z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="hidden lg:flex text-xl lg:space-x-12 px-7">
+                    <li><a href="#" class="text-white hover:text-blue-500 hover:italic active:text-blue-900">⌂ Home</a>
+                    </li>
+                    <li><a href="#Contact-us"
+                            class="text-white hover:text-blue-500 hover:italic active:text-blue-900">🛈 About</a></li>
+                    <li><a href="#Our-services"
+                            class="text-white hover:text-blue-500 hover:italic active:text-blue-900">✔ Services</a></li>
+                    <li><a href="#" class="text-white hover:text-blue-700 hover:italic active:text-blue-300">🗨 Contact
+                            us</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden">
+                <ul class="text-white">
+                    <li><a href="#"
+                            class="block py-2 px-4  hover:text-blue-200 bg-blue-500 hover:bg-blue-800 rounded-full hover:italic hover:scale-105 transition-transform duration-75 active:bg-blue-950 active:text-red-700">»
+                            Home</a>
+                    </li>
+                    <li><a href="#"
+                            class="block py-2 px-4  hover:text-blue-300 bg-blue-600 hover:bg-blue-700 rounded-full hover:italic  hover:scale-105 transition-transform duration-75 active:bg-blue-950 active:text-red-700">»
+                            About
+                            us</a>
+                    </li>
+                    <li><a href="#Our-services"
+                            class="block py-2 px-4  hover:text-blue-900 bg-blue-700 hover:bg-blue-500 rounded-full hover:italic  hover:scale-105 transition-transform duration-75 active:bg-blue-950 active:text-red-700">»
+                            Services</a>
+                    </li>
+                    <li><a href="#Contact-us"
+                            class="block py-2 px-4  hover:text-blue-800 bg-blue-800 hover:bg-blue-400 rounded-full hover:italic  hover:scale-105 transition-transform duration-75 active:bg-blue-950 active:text-red-700">»
+                            Contact
+                            us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero-section --> 
+
+    <div class="hero-section">
+        <section class="bg-cover bg-center bg-gradient-to-b bg-opacity-10 from-blue-900 text-white py-20">
+
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col items-center justify-center">
+                    <h1 class=" md:text-6xl mb-4 text-6xl font-thin bg-blue-600 rounded-full bg-opacity-20"
+                        style="font-family: cursive; text-shadow: 2px 2px 4px #000;">Welcome to
+                        Our Web Space</h1>
+                    <p class=" text-center mb-8 font-mono mt-12 text-xs hover:italic">Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Ad fugiat pariatur ullam facere quae consectetur fugit quo repellendus,
+                        repellat vero. Consequatur id veniam nobis cum possimus minus minima nostrum porro ea laboriosam
+                        consequuntur quam quia, aut officia a eaque sit culpa nisi? Saepe, nesciunt dolor iste soluta
+                        repudiandae sed temporibus. ipsum dolor sit amet consectetur adipisicing elit. Quis vitae, non
+                        esse, quisquam in quia minus suscipit quasi odit tempora voluptatibus quo repudiandae molestias.
+                        Numquam explicabo placeat laudantium maiores nostrum? ipsum dolor sit amet consectetur
+                        adipisicing elit. Consectetur doloremque pariatur aperiam iusto quam et maxime repellat saepe
+                        molestiae minima! ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+
+                    <a href="http://127.0.0.1:3000/web.html/tailwindWeb.html"
+                        class="bg-white text-blue-900  hover:text-blue-900 py-2 px-6  rounded-full font-semibold text-lg hover:bg-gray-400 font-mono hover:italic hover:scale-105 transition-transform duration-150">Learn
+                        more on yahoo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- content-section -->
+    <div class="feature-setion">
+        <section class="py-12 bg-blue-700 bg-opacity-30 rounded-b-3xl">
+            <div class="container mx-auto px-4">
+                <h2 class="text-6xl md:text-4xl font-bold mb-6 text-center text-white hover:italic">Explore Our Features
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-150">
+                        <img src="space2.webp" alt="Feature 1" class="w-full h-56 object-cover object-center">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Explore feature - 1</h3>
+                            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="text-white bg-blue-700 p-3 rounded-full hover:italic ">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-150">
+                        <img src="universe.webp" alt="Feature 2" class="w-full h-56 object-cover object-center">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Explore feature - 2</h3>
+                            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="text-white bg-blue-700 p-3 rounded-full hover:italic ">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-105">
+                        <img src="whitegalaxy.webp" alt="Feature 3" class="w-full h-56 object-cover object-center">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Explore feature - 3</h3>
+                            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="text-white bg-blue-700 p-3 rounded-full hover:italic ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-center text-white mt-16 text-6xl hover:italic" style="font-family: cursive;">Know more about
+                features
+            </h1>
+
+            <div
+                class="feature-para text-center text-white mt-24 text-xl font-mono  rounded-b-3xl bg-opacity-40 hover:scale-95 transition-transform duration-100 hover:italic">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae at, consequatur quia cum
+                    excepturi earum labore unde corrupti exercitationem cupiditate mollitia inventore, rem minima
+                    temporibus, pariatur ducimus in fuga laboriosam est explicabo autem. Quidem modi molestias ab at
+                    illo
+                    iure pariatur mollitia commodi recusandae praesentium dolorem, velit totam fugiat excepturi quas
+                    perspiciatis hic accusamus consectetur. Accusamus ipsa cupiditate, aperiam pariatur debitis quasi
+                    exercitationem labore vel animi? Nisi asperiores illo iusto, officia provident repellat autem saepe
+                    consequuntur beatae nemo debitis recusandae est veritatis dolorum nulla cumque libero voluptates
+                    dignissimos aliquid cum voluptas sint? Excepturi reprehenderit aperiam blanditiis tempore quisquam
+                    laudantium amet itaque unde provident rerum nemo sint modi architecto voluptate officia harum neque
+                    vel,
+                    molestiae totam ab commodi fugit? Suscipit odio tempora corporis ipsum, provident magnam laborum
+                    magni
+                    ullam sapiente eos illo? Eum vel accusamus reiciendis ducimus omnis illo incidunt rem quasi quis
+                    minus
+                    nostrum delectus fugiat odit, placeat iste. ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facilis
+                    in delectus architecto! Blanditiis
+                    consectetur placeat distinctio tempore saepe quos minima excepturi veniam recusandae consequuntur
+                    hic,
+                    tempora ea officiis eum adipisci ut! Nostrum vero in cupiditate maxime quae at omnis repellat
+                    consectetur reprehenderit harum doloremque fuga accusantium, sint nesciunt nisi dolorum quia magnam!
+                    Rerum ipsa aspernatur, impedit iste voluptatum mollitia porro officia? Dicta, consequuntur! Soluta
+                    ut
+                    amet odit maxime facilis ducimus modi officia nobis sint ex numquam dolore nisi ad incidunt sit, ab
+                    earum cum consequuntur eos fugiat consectetur consequatur vero animi sunt. Ea dolorem fuga quod
+                    asperiores. Et, amet quos? ipsum dolor sit amet consectetur adipisicing elit. Magni obcaecati sed,
+                    exercitationem qui facilis
+                    totam officiis commodi numquam eveniet pariatur ut praesentium esse non mollitia adipisci animi?
+                    Expedita, molestias delectus error non eveniet architecto nobis autem nulla culpa cupiditate velit
+                    neque
+                    excepturi animi praesentium id sapiente quis officia reprehenderit cum incidunt esse, necessitatibus
+                    aperiam blanditiis. Ratione tempora perspiciatis velit mollitia? </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Blog-section  -->
+
+    <section class="py-12 bg-white rounded-b-3xl rounded-t-3xl ">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold mb-20 text-black text-center mt-14 hover:italic"
+                style="font-family: cursive;">
+                Our Latest Blog Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div
+                    class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="galaxywaving.webp" alt="Blog Post 1" class="w-full h-56 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 1</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#"
+                            class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic active:bg-black">Read
+                            more</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div
+                    class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="whitegalaxy.webp" alt="Blog Post 2" class="w-full h-56 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 2</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#"
+                            class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic active:bg-black">Read
+                            more</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div
+                    class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="space2.webp" alt="Blog Post 3" class="w-full h-56 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 3</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#"
+                            class="text-white bg-blue-600 p-3 rounded-full no-underline hover:bg-blue-900 hover:italic active:bg-black">Read
+                            more</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="whitegalaxy.webp" alt="Blog Post 2" class="w-full h-56 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 2</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#"
+                            class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic active:bg-black">Read
+                            more</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="whitegalaxy.webp" alt="Blog Post 2" class="w-full h-56 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 2</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#"
+                            class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic active:bg-black">Read
+                            more</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="whitegalaxy.webp" alt="Blog Post 2" class="w-full h-56 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 2</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#"
+                            class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic active:bg-black">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other-blogs-section -->
+
+    <h1 class="text-center text-white mt-12 text-5xl font-mono hover:italic">Explore our other blogs and learn more
+    </h1>
+
+    <section class="other-blogs-section">
+        <section class="new-blogs text-center bg-black rounded-b-3xl">
+
+            <div class=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 justify-center flex ">
+
+
+                <div
+                    class=" w-full bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="universe.webp" alt="Blog Post 2" class="w-full h-64 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Blog Post - 2</h3>
+                        <p class="text-gray-700 mb-4 hover:italic">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Officia quae enim laudantium corrupti dolores harum impedit aliquid libero similique dolorum
+                            fugiat numquam aut, fugit distinctio sit deleniti neque placeat tempore beatae id?
+                            Voluptatum
+                            dignissimos non aperiam quia, molestiae repellendus consectetur aliquid ratione et
+                            perspiciatis
+                            ducimus totam voluptatem ipsum at! Quam? ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#" class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic">Read
+                            more</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-white text-center mt-10 text-4xl font-bold font-mono hover:italic ">Know about this blog
+            </h1>
+
+            <p
+                class=" blogs-para text-white pb-60 text-center mt-20 text-xl  font-mono  hover:italic bg-opacity-25 hover:scale-95 transition-transform duration-300 first-letter:">
+                Lorem ipsum dolor, sit
+                amet consectetur adipisicing
+                elit. Ex unde voluptatibus non, beatae ipsum dolor nam omnis facilis amet ipsam dicta sunt illo vero
+                cupiditate consequuntur ut delectus suscipit odio possimus esse. Autem tenetur et error illo
+                repellendus,
+                ratione labore temporibus non saepe minus a incidunt consectetur harum iusto! Incidunt ducimus aperiam
+                ratione maxime dignissimos harum odio nulla recusandae natus earum nam voluptas, inventore blanditiis
+                tenetur? Praesentium delectus earum nobis assumenda provident vero illum expedita odit repellat
+                suscipit,
+                consectetur eos ipsum harum eaque enim reiciendis corrupti. Adipisci, mollitia iste deserunt hic
+                facilis,
+                obcaecati a, velit aliquam odio quidem omnis minus facere sed cupiditate. Pariatur itaque illo quidem,
+                maiores officiis enim consectetur aliquid, assumenda officia, cum saepe. Sapiente magni fugit, tempore
+                dolorum quod, minima voluptate obcaecati maiores voluptates esse adipisci at pariatur exercitationem
+                voluptatibus culpa. Similique quo, hic at a molestiae nemo aut quos sapiente quas. Blanditiis, delectus
+                consectetur eos adipisci vel necessitatibus hic dignissimos rem odit nemo maiores tenetur est ea
+                incidunt
+                atque in debitis earum dolore magni similique tempora. Eum odio aperiam ut saepe ea, libero reiciendis
+                nesciunt modi explicabo non sed nobis repellat voluptatibus quaerat culpa cumque architecto recusandae
+                soluta, enim asperiores aliquam esse exercitationem. Nemo, quia repudiandae? ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam
+                impedit, cumque magni odit dolorum iste commodi, perferendis dolores, natus pariatur est! Pariatur
+                excepturi
+                in itaque minima labore error facere odit nulla ullam ratione sunt, aperiam ut, fugiat autem non aliquid
+                nesciunt ad nisi quasi. Sit a nesciunt sapiente minus corrupti totam obcaecati ipsum natus fugit,
+                distinctio
+                aliquam fuga odio non. Placeat consequatur id dicta sapiente totam. Delectus suscipit voluptate, porro
+                illum
+                nesciunt aspernatur cum eius voluptatum dolor et voluptatibus. Et, ea nobis a, corrupti consectetur, est
+                eum
+                enim molestiae amet vero deserunt aut in tenetur perferendis laudantium eaque blanditiis vitae. ipsum
+                dolor
+                sit amet consectetur adipisicing elit. Vitae minima
+                ad quo
+                earum.
+                Ea animi numquam aliquid consequatur incidunt repudiandae saepe, non illum optio consectetur architecto.
+                Voluptate, exercitationem dolorum. Consequatur error repellendus inventore pariatur numquam maxime
+                sapiente,
+                deleniti culpa? Perspiciatis eius commodi eveniet odit quisquam ut corporis nemo voluptate, ipsa ab
+                inventore ex
+                nesciunt deserunt facilis sit, suscipit maxime esse.</p>
+        </section>
+
+
+        <!-- Other-blogs-2 -->
+
+        <section class="new-blogs2 text-center bg-white rounded-b-3xl">
+
+            <div class=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 justify-center flex">
+
+
+                <div
+                    class=" w-full bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="whitegalaxy.webp" alt="Blog Post 2" class="w-full h-64 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Blog Post - 2</h3>
+                        <p class="text-white mb-4 hover:italic">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Officia quae enim laudantium corrupti dolores harum impedit aliquid libero similique dolorum
+                            fugiat numquam aut, fugit distinctio sit deleniti neque placeat tempore beatae id?
+                            Voluptatum
+                            dignissimos non aperiam quia, molestiae repellendus consectetur aliquid ratione et
+                            perspiciatis
+                            ducimus totam voluptatem ipsum at! Quam? ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#" class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic">Read
+                            more</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-black text-center mt-10 text-4xl font-bold font-mono hover:italic">Know about this blog</h1>
+
+            <p
+                class=" blogs-para text-black pb-60 text-center mt-20 text-xl  font-mono  hover:italic bg-opacity-25 hover:scale-95 transition-transform duration-300">
+                Lorem ipsum dolor, sit
+                amet consectetur adipisicing
+                elit. Ex unde voluptatibus non, beatae ipsum dolor nam omnis facilis amet ipsam dicta sunt illo vero
+                cupiditate consequuntur ut delectus suscipit odio possimus esse. Autem tenetur et error illo
+                repellendus,
+                ratione labore temporibus non saepe minus a incidunt consectetur harum iusto! Incidunt ducimus aperiam
+                ratione maxime dignissimos harum odio nulla recusandae natus earum nam voluptas, inventore blanditiis
+                tenetur? Praesentium delectus earum nobis assumenda provident vero illum expedita odit repellat
+                suscipit,
+                consectetur eos ipsum harum eaque enim reiciendis corrupti. Adipisci, mollitia iste deserunt hic
+                facilis,
+                obcaecati a, velit aliquam odio quidem omnis minus facere sed cupiditate. Pariatur itaque illo quidem,
+                maiores officiis enim consectetur aliquid, assumenda officia, cum saepe. Sapiente magni fugit, tempore
+                dolorum quod, minima voluptate obcaecati maiores voluptates esse adipisci at pariatur exercitationem
+                voluptatibus culpa. Similique quo, hic at a molestiae nemo aut quos sapiente quas. Blanditiis, delectus
+                consectetur eos adipisci vel necessitatibus hic dignissimos rem odit nemo maiores tenetur est ea
+                incidunt
+                atque in debitis earum dolore magni similique tempora. Eum odio aperiam ut saepe ea, libero reiciendis
+                nesciunt modi explicabo non sed nobis repellat voluptatibus quaerat culpa cumque architecto recusandae
+                soluta, enim asperiores aliquam esse exercitationem. Nemo, quia repudiandae? ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam
+                impedit, cumque magni odit dolorum iste commodi, perferendis dolores, natus pariatur est! Pariatur
+                excepturi
+                in itaque minima labore error facere odit nulla ullam ratione sunt, aperiam ut, fugiat autem non aliquid
+                nesciunt ad nisi quasi. Sit a nesciunt sapiente minus corrupti totam obcaecati ipsum natus fugit,
+                distinctio
+                aliquam fuga odio non. Placeat consequatur id dicta sapiente totam. Delectus suscipit voluptate, porro
+                illum
+                nesciunt aspernatur cum eius voluptatum dolor et voluptatibus.
+            </p>
+        </section>
+
+        <!-- Other-blogs-3  -->
+
+        <section class="new-blogs2 text-center bg-black rounded-b-3xl">
+
+            <div class=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 justify-center flex">
+
+
+                <div
+                    class=" w-full bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="giphy.webp" alt="Blog Post 2" class="w-full h-64 object-cover object-center bg-white">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Blog Post - 2</h3>
+                        <p class="text-gray-700 mb-4 hover:italic">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Officia quae enim laudantium corrupti dolores harum impedit aliquid libero similique dolorum
+                            fugiat numquam aut, fugit distinctio sit deleniti neque placeat tempore beatae id?
+                            Voluptatum
+                            dignissimos non aperiam quia, molestiae repellendus consectetur aliquid ratione et
+                            perspiciatis
+                            ducimus totam voluptatem ipsum at! Quam? ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <a href="#" class="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-900 hover:italic">Read
+                            more</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-white text-center mt-10 text-4xl font-bold font-mono hover:italic">Know about this blog</h1>
+
+            <p
+                class=" blogs-para text-white pb-60 text-center mt-20 text-xl  font-mono  hover:italic bg-opacity-25 hover:scale-95 transition-transform duration-300">
+                Lorem ipsum dolor, sit
+                amet consectetur adipisicing
+                elit. Ex unde voluptatibus non, beatae ipsum dolor nam omnis facilis amet ipsam dicta sunt illo vero
+                cupiditate consequuntur ut delectus suscipit odio possimus esse. Autem tenetur et error illo
+                repellendus,
+                ratione labore temporibus non saepe minus a incidunt consectetur harum iusto! Incidunt ducimus aperiam
+                ratione maxime dignissimos harum odio nulla recusandae natus earum nam voluptas, inventore blanditiis
+                tenetur? Praesentium delectus earum nobis assumenda provident vero illum expedita odit repellat
+                suscipit,
+                consectetur eos ipsum harum eaque enim reiciendis corrupti. Adipisci, mollitia iste deserunt hic
+                facilis,
+                obcaecati a, velit aliquam odio quidem omnis minus facere sed cupiditate. Pariatur itaque illo quidem,
+                maiores officiis enim consectetur aliquid, assumenda officia, cum saepe. Sapiente magni fugit, tempore
+                dolorum quod, minima voluptate obcaecati maiores voluptates esse adipisci at pariatur exercitationem
+                voluptatibus culpa. Similique quo, hic at a molestiae nemo aut quos sapiente quas. Blanditiis, delectus
+                consectetur eos adipisci vel necessitatibus hic dignissimos rem odit nemo maiores tenetur est ea
+                incidunt
+                atque in debitis earum dolore magni similique tempora. Eum odio aperiam ut saepe ea, libero reiciendis
+                nesciunt modi explicabo non sed nobis repellat voluptatibus quaerat culpa cumque architecto recusandae
+                soluta, enim asperiores aliquam esse exercitationem. Nemo, quia repudiandae? ipsum dolor sit amet
+            </p>
+        </section>
+    </section>
+
+
+    <!-- Our-services-section  -->
+
+    <div class="py-16" id="Our-services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-blue-600 rounded-full bg-opacity-25">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white font-mono sm:text-5xl">
+                    Our Services
+                </h2>
+                <p class="mt-4 text-lg text-white font-mono hover:italic">
+                    We offer a wide range of services...
+                </p>
+            </div>
+            <div class="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+                <div
+                    class="bg-white overflow-hidden shadow rounded-lg hover:scale-105 transition-transform duration-150">
+                    <a href="#">
+                        <img src="mencoding.avif" class="h-36 w-full" alt="">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-medium text-gray-900 font-mono">
+                            Web-development
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-600 hover:italic">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere cumque, tempore aut
+                            possimus aspernatur perferendis repellat voluptatum fugit omnis magnam unde aliquam
+                            laboriosam architecto ullam!
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white overflow-hidden shadow rounded-lg  hover:scale-105 transition-transform duration-150">
+                    <a href="#">
+                        <img src="programming.jpg" class="h-36 w-full" alt="">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-medium text-gray-900 font-mono">
+                            Machine learning
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-600 hover:italic">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla eaque ipsam, voluptatem
+                            accusamus animi molestias aut perferendis expedita eum nobis tempora et. Praesentium,
+                            quidem? Fugiat?
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white overflow-hidden shadow rounded-lg  hover:scale-105 transition-transform duration-150">
+                    <a href="#">
+                        <img src="universe.webp" class="h-36 w-full" alt="">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-medium text-gray-900 font-mono">
+                            Space study
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-600 hover:italic">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, corrupti nam. Ipsam
+                            doloribus dolorum sunt assumenda incidunt suscipit, ex id voluptate voluptatum esse sint
+                            quod.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- about section -->
+
+    <div class="about-us" id="Contact-us">
+        <section class="py-10">
+            <div class="container mx-auto bg-gray-400 rounded-t-3xl rounded-b-3xl bg-opacity-25">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-5xl text-center mb-10 text-white font-mono hover:italic">About Us</h2>
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="md:w-1/2 mb-8 md:mb-0 hover:scale-y-95 transition-transform duration-100">
+                            <img src="programming.jpg" alt="About Us Image" class="rounded-lg">
+                        </div>
+                        <div class="md:w-1/2">
+                            <p class="text-white text-lg mb-4 mx-11 font-mono hover:italic">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing
+                                elit.
+                                Fusce euismod ante quis est efficitur, vel vehicula tortor sodales. Sed nec purus nisl.
+                                Integer id libero vitae sapien dapibus facilisis in a elit. Proin sed malesuada libero.
+                                Integer malesuada libero vitae ligula ultricies, nec mollis orci commodo. In feugiat
+                                vehicula justo ut aliquet.
+                                Fusce euismod ante quis est efficitur, vel vehicula
+                                tortor
+                                sodales. Sed nec purus nisl. Integer id libero vitae sapien dapibus facilisis in a elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- contact-us section -->
+
+    <h1 class="text-white text-center text-6xl font-mono font-bold hover:italic hover:text-gray-400 mb-8">Contact us
+    </h1>
+
+    <section class="Contact-us justify-center container bg-white rounded-t-3xl rounded-b-3xl">
+        <div class="flex justify-center items-center h-screen">
+            <div class="bg-gray-700 p-8 rounded-3xl shadow-lg w-full">
+                <h2 class="text-2xl font-bold mb-4 text-white  font-mono hover:italic">send message to us</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-white font-light text-xl">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name"
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-10 hover:scale-105 transition-transform duration-500 bg-slate-300 ">
+                    </div>
+                    <div>
+                        <label for="email" class="block font-light text-white text-xl">Email</label> blogs and learn
+                        more
+
+                        <input type="email" id="email" name="email" required placeholder="Enter your email"
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md h-10 hover:scale-105 transition-transform duration-500 bg-gray-300">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-xl font-light text-white">Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="write your message "
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md hover:scale-105 transition-transform duration-500 bg-gray-300"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 font-mono  hover:italic hover:text-gray-400 active:bg-blue-950">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CTA(call of action section) -->
+
+    <div class=" bg-blue-600 rounded-full  bg-opacity-25 py-12 mt-16">
+        <div class="container mx-auto flex flex-col items-center">
+            <h2 class="text-3xl font-bold text-white mb-4 hover:italic">Join Us Today!</h2>
+            <p class="text-lg text-white mb-8">Sign up now to receive exclusive offers and updates.</p>
+            <div class="flex">
+                <input type="email" placeholder="Your email address"
+                    class=" font-mono hover:italic px-4 py-3 mr-4 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white text-gray-800">
+                <button
+                    class="bg-white text-blue-500 px-6 py-3 rounded-r-lg hover:text-blue-600 transition duration-300 font-light  font-mono hover:bg-blue-300">Sign
+                    Up</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-white py-12">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+            <div class="mb-4 lg:mb-0">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

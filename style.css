@@ -1,0 +1,30 @@
+body {
+    background-image: url(galaxystars.webp);
+    background-attachment: fixed;
+
+}
+
+.navigation-bar {
+    background: radial-gradient(rgb(1, 1, 62), rgb(5, 169, 201));
+    font-family: monospace;
+    transform: translateY(0);
+    transition: transform 0.3s;
+    font-weight: bold;
+    position: sticky;
+    width: 100%;
+}
+
+.navigation-bar #mobile-menu {
+    font-family: cursive;
+
+}
+
+.Contact-us {
+    padding: 21px;
+}
+
+.Contact-us ::-webkit-input-placeholder {
+    font-family: cursive;
+    color: black;
+
+}
